@@ -24,10 +24,18 @@ UHadoop中Sqoop默认与Oozie一起安装，如果您创建集群时勾选了Ooz
 - 在master1节点上以root用户执行以下命令即可，默认安装到/home/hadoop/目录下
 
 ```
+cdh5.4.9
 sh /home/hadoop/.versions/umrAgent/script/install.sh sqoop 1.4.5 cdh5.4.9
+执行source ~/.bashrc
 ```
 
-#### b. tar包安装
+```
+cdh5.13.3
+sh /home/hadoop/.versions/umrAgent/script/install.sh sqoop 1.4.7 cdh5.13.3
+执行source ~/.bashrc
+```
+
+#### b. tar包安装(用于cdh5.4.9， 在cdh5.13.3中可以用上面描述中的脚本安装)
 
 以下示例为在UHadoop节点上下载tar包安装过程；若在非UHadoop节点上安装，需变更相关路径，可以适当参考。
 
@@ -57,6 +65,7 @@ sh /home/hadoop/.versions/umrAgent/script/install.sh sqoop 1.4.5 cdh5.4.9
 # sqoop
 export SQOOP_HOME=$HADOOP_HOME/sqoop
 export PATH=$PATH:$SQOOP_HOME/bin
+执行source ~/.bashrc
 ```
 
 4.  配置sqoop环境变量
@@ -70,20 +79,24 @@ export PATH=$PATH:$SQOOP_HOME/bin
 修改如下参数：
 
 ```
+
 #Set path to where bin/hadoop is available
 export HADOOP_COMMON_HOME=/home/hadoop
 
 #Set path to where hadoop-*-core.jar is available
-export HADOOP_MAPRED_HOME=/home/hadoop/share/hadoop/mapreduce
+export HADOOP_MAPRED_HOME=/home/hadoop
 
 #set the path to where bin/hbase is available
 export HBASE_HOME=/home/hadoop/hbase
 
 #Set the path to where bin/hive is available
 export HIVE_HOME=/home/hadoop/hive
+export HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$HIVE_HOME/lib/*
 
 #Set the path for where zookeper config dir is
 export ZOOCFGDIR=/home/hadoop/zookeeper/conf
+
+
 ```
 
 5.  拷贝相关依赖
@@ -91,9 +104,10 @@ export ZOOCFGDIR=/home/hadoop/zookeeper/conf
 
 
 ```
-  cd /home/hadoop/sqoop
-  cp /home/hadoop/hive/lib/mysql-connector-java-*.jar ./lib/
-  cp /home/hadoop/share/hadoop/mapreduce/* ./lib/
+ cd /home/hadoop/sqoop
+ cp /home/hadoop/hive/lib/mysql-connector-java-*.jar ./lib/
+ cp -rf /home/hadoop/share/hadoop/mapreduce/* ./lib/
+
 ```
 
 ### 1.2 从MySQL导出到HDFS
