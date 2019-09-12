@@ -153,7 +153,9 @@ scan 'test_hbase'
 
 参考文档：https://zeppelin.apache.org/docs/latest/interpreter/spark.html
 
-Zeppelin spark解释器组支持如下几种解释器
+
+Zeppelin spark解释器组支持如下几种解释器:
+
 
 | Name       |  Class     | Description     |
 | ---------- | ---------- | -------- |
@@ -162,6 +164,7 @@ Zeppelin spark解释器组支持如下几种解释器
 | %spark.r |	SparkRInterpreter |	Provides an R environment with SparkR support |
 | %spark.sql | SparkSQLInterpreter |	Provides a SQL environment |
 | %spark.dep | DepInterpreter |	Dependency loader |
+
 
 #### 5.1 解释器配置修改
 
