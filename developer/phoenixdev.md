@@ -1,3 +1,7 @@
+{{indexmenu_n>14}}
+
+# Phoenix开发指南
+
 ### 介绍
 Apache Phoenix项目由saleforce开源并贡献给Apache基金会，目前为Apache基金会的顶级项目。它是构建在HBase上的SQL中间层。 Phoenix会将用户编写的sql查询编译为一系列的scan操作，最终产生通用的JDBC结果集返回给客户端，小范围的查询可做到毫秒级响应，千万数据的响应速度为秒级。
 
