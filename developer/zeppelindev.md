@@ -40,6 +40,7 @@ uhadoop zeppelin不允许匿名用户使用，使用Shiro进行用户权限控�
 
 ![](/images/zeppelin-interpreter.png)
 
+
 ### Hive 解释器测试
 
 #### Hive 解释器配置
@@ -54,6 +55,7 @@ zeppelin-0.8.1不再提供默认的Hive解释器，只提供了jdbc解释器，�
 
 主要修改的配置为如下几项：
 
+```
 default.driver： org.apache.hive.jdbc.HiveDriver
 
 default.url： jdbc:hive2://uhadoop-xxxxxx-master2:10000   (为集群hive-server2 jdbc地址）
@@ -68,14 +70,22 @@ Dependencies的artifact增加如下两个（这里选择从集群本地文件读
 
 /home/hadoop/lib/lib/hadoop-common-2.6.0-cdh5.13.3.jar
 
+```
 
-#### 3.2 Hive notebook创建
+
+
+####  Hive notebook创建
+
 
 ![](/images/create-note.png)
 
 ![](/images/hive-note.png)
 
-#### 3.3 hive notebooke中创建查询
+
+
+
+####  hive notebooke中创建查询
+
 
 hive详细使用请参考：https://doc.ucloud.cn/analysis/uhadoop/developer/hivedev
 
@@ -94,29 +104,38 @@ show tables
 
 sql：
 
+
+```
+
      1. create table test_hive (id int, name string)
 
      2. insert into test_hive values (1,'test_ucloud'),(2,'test_hive')
 
      3. select * from test_hive
+     
+ ```
 
 ![](/images/hive-note-paragraph.png)
 
 ![](/images/hive-sql-2.png)
 
-### 4.hbase解释器测试
+
+
+### hbase解释器测试
+
 
 参考文档：https://zeppelin.apache.org/docs/latest/interpreter/hbase.html
 
+
 hbase解释器为Zeppelin自带的解释器，不需要再进行解释器的配置，只需在使用时带上"%hbase"便可以进行hbase语句解析
 
-可以为hbase测试建立新的notebook，方法同上，然后创建如下paragraph并执行：
+可以为hbase测试建立新的notebook，方法同上，然后创建如下paragraph并执行
+
 
 paragraph1:
 
 ```
 %hbase
-
 create 'test_hbase', 'cf'
 ```
 
@@ -124,7 +143,6 @@ paragraph2:
 
 ```
 %hbase
-
 list
 ```
 
@@ -147,14 +165,19 @@ scan 'test_hbase'
 
 ![](/images/hbase-sql.png)
 
-### 5. spark解释器使用
+
+### spark解释器使用
+
 
 #### 概述：
+
 
 参考文档：https://zeppelin.apache.org/docs/latest/interpreter/spark.html
 
 
+
 Zeppelin spark解释器组支持如下几种解释器:
+
 
 
 | Name       |  Class     | Description     |
@@ -166,13 +189,15 @@ Zeppelin spark解释器组支持如下几种解释器:
 | %spark.dep | DepInterpreter |	Dependency loader |
 
 
-#### 5.1 解释器配置修改
+
+#### 解释器配置修改
 
 spark解释器配置的默认部署类型是local mode, uhadoop中spark 是on yarn模式，修改配置的master属性为yarn-client或yarn-cluster:
 
 ![](/images/spark-interpreter.png)
 
-#### 5.2 使用测试
+
+####  使用测试
 
 下载测试数据，放入hdfs:
 
