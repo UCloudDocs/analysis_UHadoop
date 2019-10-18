@@ -9,54 +9,19 @@ Hue是面向 Hadoop 的开源用户界面，可以让您更轻松地运行和开
 
 默认用户名/密码：hadoop/hadoop或者hue/hue， 用户登陆后可以自行更改。
 
-如果需要为Hue配置ldap或者sentry服务，请安装以下步骤安装：
 
-## 1. 为Hue配置ldap
-
-下载[安装包](http://uhadoop-new.ufile.ucloud.com.cn/hue/openldap-2.4.44.tar.gz)，并拷贝到集群的master1节点上，并以root用户执行以下命令：
-
-```
-tar zxf openldap-2.4.44.tar.gz -C /home/hadoop/.versions/
-sh /home/hadoop/.versions/openldap-2.4.44/dependentpackages/install-openldap.sh
-```
-
-安装完成后，会自动启动openldap服务。如果需要启动、停止或重启服务，请以root用户在master1节点上执行以下命令：
-
-```
-service ldap start|stop|restart
-```
-
-## 2. 为Hue配置Sentry
-
-下载[安装包](http://uhadoop-new.ufile.ucloud.com.cn/hue/sentry-1.7.0.tar.gz)，分发到集群所有安装hive服务的节点上，以root用户执行以下命令：
-
-```
-tar zxf sentry-1.7.0.tar.gz -C /home/hadoop/.versions/
-sh /home/hadoop/.versions/sentry-1.7.0/dependentpackages/install-sentry.sh
-```
-
-安装完成后，会自动启动sentry服务。如果需要启动、停止或重启服务，请以root用户在master1节点上执行以下命令：
-
-```
-service sentry start|stop|restart
-```
-
-> 可以通过集群的“服务管理-\>Hive”页面查看集群中有哪些角色安装了Hive服务：
-
-![hadoop-hue-find-hive.png](/images/developer/hadoop-hue-find-hive.png)
-
-## 3. 配置工作流
+## 1. 配置工作流
 
 启用Hue的工作流功能，需要在集群上安装。可以在集群的"服务管理"页面启用Oozie。
 
-### 3.1 创建新的工作流
+### 1.1 创建新的工作流
 
 在浏览器中依次点击【Workflows】-\>【Editors】-\>【Wokflows】，进入Workflow
 Editor。然后点击页面右侧的【Create】按钮。
 
 ![3.1-create-workflow.png](/images/developer/3.1-create-workflow.png)
 
-### 3.2 创建Spark任务
+### 1.2 创建Spark任务
 
 从action中拖动spark的标签到工作流中。点击右上角的【Settings】按钮，出现一个弹出窗口，我们可以在这里为Workflow设置变量名，并设置Workspace。
 
@@ -80,7 +45,7 @@ path，所以这里我们继续添加参数，如下图：
 
 好了，一切都设置好了之后，点击右上角的【Save】按钮。
 
-### 3.3 创建Hive任务
+### 1.3 创建Hive任务
 
 uhadoop上使用的是hive-server2，所以这里选择hive-server2标签拖动到action中。
 
@@ -92,7 +57,7 @@ uhadoop上使用的是hive-server2，所以这里选择hive-server2标签拖动�
 
 ![](/images/developer/3.3-hive1.png)
 
-### 3.4 创建Sqoop任务
+### 1.4 创建Sqoop任务
 
 选择sqoop1这个标签拖动到action中。然后，添加需要执行的Sqoop命令。
 
@@ -106,7 +71,7 @@ uhadoop上使用的是hive-server2，所以这里选择hive-server2标签拖动�
 
 ![](/images/developer/3.4-sqoop.png)
 
-## 4. Hue页面权限控制
+## 2. Hue页面权限控制
 
 - 点击【管理用户】-\>【组】-\> 选择要修改的组名称，设置相应权限并保存
 
