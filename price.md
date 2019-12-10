@@ -18,9 +18,11 @@
 | Master&​Task ​  | 计算优化Ⅱ型实例 ​    | H1-large ​        | 4   | 8     | 100(SSD) ​       | 508         | 598            |
 | Master&​Task ​  | 计算优化Ⅱ型实例 ​    | H1-xlarge ​       | 8   | 16    | 200(SSD) ​       | 933         | 1098           |
 | Master&​Task ​  | 计算优化Ⅱ型实例 ​    | H1-2xlarge ​      | 16  | 32    | 400(SSD) ​       | 1783        | 2098           |
+| Master&​Task ​  | 计算优化Ⅱ型实例 ​    | H1-4xlarge ​      | 32  | 64    | 500(SSD) ​       | 4300        | 4350           |
 | Master&​Task ​  | 内存优化Ⅱ型实例 ​    | H2-large ​        | 4   | 16    | 100(SSD) ​       | 599         | 1198           |
-| Master&​Task ​  | 内存优化Ⅱ型实例 ​    | H2-xlarge ​       | 8   | 32    | 200(SSD) ​       | 1199        | 2198           |
+| Master&​Task ​  | 内存优化Ⅱ型实例 ​    | H2-xlarge ​       | 8   | 32    | 200(SSD) ​       | 1199        | 1598           |
 | Master&​Task ​  | 内存优化Ⅱ型实例 ​    | H2-2xlarge ​      | 16  | 64    | 400(SSD) ​       | 2249        | 3998           |
+| Master&​Task ​  | 内存优化Ⅱ型实例 ​    | H2-4xlarge ​      | 32  | 64    | 1000(SSD) ​      | 4650        | 5100           |
 |                 | ​             |                   |     |       |                  |             | ​              |
 | Core            | 密集存储实例 ​      | D1-large ​        | 2   | 6     | 4000(SATA) ​     | 498         | 498            |
 | Core            | 密集存储实例 ​      | D1-xlarge ​       | 4   | 12    | 8000(SATA) ​     | 998         | 998            |
