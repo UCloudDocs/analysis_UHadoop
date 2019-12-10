@@ -52,6 +52,11 @@ scp -r root@master_ip:/home/hadoop/.versions/hadoop-<version> /root/
 scp -r root@master_ip:/home/hadoop/hive /root/
 #修改hive-site.xml jar包相对路径
 sed -i 's/home\/hadoop/root/g' /root/hive/conf/hive-site.xml
+sed -i 's/home\/hadoop/root/g' /root/hive/conf/hive-env.sh
+
+#tez 
+scp -r root@master_ip:/home/hadoop/tez /root/
+
 #hbase
 scp -r root@master_ip:/home/hadoop/hbase /root/
 #spark
