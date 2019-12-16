@@ -1,4 +1,4 @@
-<div class="sidebar_title icon__uhadoop "> 托管 Hadoop 集群 UHadoop</div>
+<div class="sidebar_title icon__uhadoop ">托管 Hadoop 集群 UHadoop</div>
 
 * [概览](analysis/uhadoop/overview)
 * [产品简介](analysis/uhadoop/intro)
