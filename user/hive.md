@@ -9,9 +9,12 @@ spark，但可通过使用[Spark-sql](http://docs.ucloud.cn/analysis/uhadoop/dev
 
 ## 执行SQL语句时，map/reduce任务内存不足怎么办？
 
-如果在日志文件中看到出现running beyond physical memory limits错误，可以通过set
-mapreduce.map.memory.mb=XXX或者set
-mapreduce.reduce.memory.mb=XXX来增大map或reduce可以使用的内存数。如果多个任务都出现这个情况，可以在/home/hadoop/hive/conf/hive-site.xml里加入配置
+如果在日志文件中看到出现running beyond physical memory limits错误，可以通过
+```
+set mapreduce.map.memory.mb=XXX
+set mapreduce.reduce.memory.mb=XXX
+```
+等来增大map或reduce可以使用的内存数。如果多个任务都出现这个情况，可以在`/home/hadoop/hive/conf/hive-site.xml`里加入配置
 
 ## hive-server2 通过jdbc提交任务的时候报文件权限不足
 
@@ -25,9 +28,7 @@ Connection con = DriverManager.getConnection("jdbc:hive2://ip:10000/default", "h
 
 Hive默认的优化策略是对select这种简单操作，并不会启动map任务。可以通过在命令中指定hive.fetch.task.conversion=none这个参数，或者配置在/home/hadoop/hive/conf/hive-site.xml中来强制制启动map任务。
 
-> 举例：
-
-\>
-
-> hive -e "set hive.fetch.task.conversion=none;select \* from
-> spark\_testtable;"
+举例：
+```
+hive -e "set hive.fetch.task.conversion=none;select * from spark_testtable;"
+```

@@ -57,14 +57,8 @@ spark-submit --class users_day_activity --master yarn-client --jars /root/hive/l
 ```
 
 > 注解：
-
-\>
-
-> 1.修改配置的机器为集群所有节点，包括提交任务的客户端；
-
-\>
-
-> 2.uhadoop-XXXXXX需要修改为集群ID。
+  1.修改配置的机器为集群所有节点，包括提交任务的客户端；
+  2.uhadoop-XXXXXX需要修改为集群ID。
 
 **2.NodeManager配置log-url**
 
