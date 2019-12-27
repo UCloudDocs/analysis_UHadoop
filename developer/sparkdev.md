@@ -23,10 +23,8 @@ Spark可以有以下几种运行方式：
 基于Hadoop的资源管理系统Yarn，Spark作为提交任务的客户端，所有任务都提交到Yarn上，由Yarn来分配任务执行。Spark on
 yarn也分为yarn-cluster与yarn-client模式。区别如下：
 
-``` 
   - yarn-cluster：Driver运行在Appliaction Master（AM）上。AM进程同时负责驱动Application和资源申请等，它运行在Container内，客户端提交完任务可关闭。一般适用于生产环境，但不适合运行交互类任务。
   - yarn-client：Driver运行在本地。任务提交后，客户端需要和Container通信进行作业的调度。适用于交互类任务和调试，可更加方便的看到任务的结果。
-```
 
 ## 2. Spark使用方式
 
@@ -42,7 +40,7 @@ yarn也分为yarn-cluster与yarn-client模式。区别如下：
 ```
 spark-submit --master yarn --deploy-mode client --num-executors 2
 --executor-cores 1 --executor-memory 1G
-$SPARK\_HOME/examples/src/main/python/pi.py 100
+$SPARK_HOME/examples/src/main/python/pi.py 100
 
 ```
 
@@ -64,14 +62,18 @@ $SPARK\_HOME/examples/src/main/python/pi.py 100
     [hadoop@10-10-116-236 bin]$ ./spark-submit --class org.apache.spark.examples.SparkPi --master yarn --deploy-mode cluster  ../lib/spark-examples*.jar 10
 
 查看运行结果:
+屏幕打如下，代表执行成功。
+```
+final status: SUCCEEDED
+```
 
-> 屏幕打印final status: SUCCEEDED 代表执行成功。
-> 
-> 这个例子的输出结果是使用标准输出打印的:System.out.println("Pi is roughly " + 4.0 \* count
-> / n)
->
-> 所以只有client模式会打印到屏幕上，yarn模式需要去log中查看
-> hdfs://Ucluster/var/log/hadoop-yarn/apps/hadoop/logs/applicationid
+这个例子的输出结果是使用标准输出打印的
+```
+System.out.println("Pi is roughly " + 4.0 * count / n)
+```
+所以只有client模式会打印到屏幕上，yarn模式需要去log中查看
+hdfs://Ucluster/var/log/hadoop-yarn/apps/hadoop/logs/applicationid
+
 
 ### 2.2 Spark-shell
 
@@ -80,26 +82,42 @@ spark-shell是Spark提供的可通过scala语言快速实现任务执行的方�
 **示例**
 
 - 启动spark-shell客户端
-
+```
     spark-shell
-
+```
 - 构造一个HiveContext
-
+```
     scala> val sqlContext = new org.apache.spark.sql.hive.HiveContext(sc);
-
+```
 - 创建表格src
-
+```
     scala> sqlContext.sql("CREATE TABLE IF NOT EXISTS src (key INT,value STRING)")
-
+```
 - 从本地文件加载数据
-
+```
     scala> sqlContext.sql("LOAD DATA LOCAL INPATH '/home/hadoop/spark/examples/src/main/resources/kv1.txt' INTO TABLE src")
-
+```
 - 表格操作，显示表src数据
-
+```
     scala> sqlContext.sql("FROM src SELECT key, value").collect().foreach(println);
+```
+### 2.3 Spark-pyspark
+命令行pyspark是Spark提供的可通过python语言快速实现任务执行的方式。
+- 进入命令行交互式客户端
+  ```
+  /pyspark
+  ```
+- 示例
 
-### 2.3 Spark-sql
+  ```
+  scala> val textFile = sc.textFile("file:///home/mine/data_file")
+  textFile: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[29] at textFile at <console>:16
+  scala> val counts = textFile.flatMap(line => line.split(" ")).map(word => (word, 1)).partitionBy(new HashPartitioner(10))
+  counts: org.apache.spark.rdd.RDD[(String, Int)] = ShuffledRDD[32] at partitionBy at <console>:18
+  scala> counts.reduceByKey(_+_).saveAsTextFile("/home/mine/partition_spark/hash")
+  scala>
+  ```
+### 2.4 Spark-sql
 
 spark-sql是Spark提供的一种用SQL的方式处理结构化数据的组件，它提供了一个叫做DataFrames的可编程抽象数据模型，并且可被视为一个分布式的SQL查询引擎，它支持大部分常用的Hive
 SQL
@@ -114,7 +132,7 @@ SQL
 
     spark-sql> select * from src;
 
-### 2.4 Spark-Hive
+### 2.5 Spark-Hive
 
 使用Spark Hive的时候需要在SPARK\_HOME/conf下面配置hive-site.xml。通过spark-shell操作Hive
 table。
@@ -157,26 +175,27 @@ For-example：
 
 spark-sql启动之后我们就可以使用Hive的表格进行相关操作。
 
-### 2.5 Spark-ThriftServer
+### 2.6 Spark-ThriftServer
 
 通过Thrift JDBC/ODBC server的方式操作hive表
 
 **示例**
 
 - 启动spark-thriftserver Master1节点上hadoop用户下执行
-
-    /home/hadoop/spark/sbin/start-thriftserver.sh --hiveconf hive.server2.thrift.port=10000 --hiveconf hive.server2.thrift.bind.host=`hostname`  --supervise
-
+  ```
+  /home/hadoop/spark/sbin/start-thriftserver.sh --hiveconf hive.server2.thrift.port=10000 --hiveconf hive.server2.thrift.bind.host=`hostname`  --supervise
+  ```
 - beeline的方式连接thrift接口
-
-    beeline> !connect jdbc:hive2://uhadoop-******-master1:10000/default;
-
-> 注解：此处用户名密码传空即可
+  ```
+  beeline> !connect jdbc:hive2://uhadoop-******-master1:10000/default;
+  ```
+  > 注解：此处用户名密码传空即可
 
 - 执行sql
-
-    0: jdbc:hive2://uhadoop-*****-master1:10000/> show tables;
-    0: jdbc:hive2://uhadoop-*****-master1:10000/> select * from src;
+  ```
+  0: jdbc:hive2://uhadoop-*****-master1:10000/> show tables;
+  0: jdbc:hive2://uhadoop-*****-master1:10000/> select * from src;
+  ```
 
 ## 3. Spark应用开发
 
@@ -425,8 +444,9 @@ cluster模式:
 spark-submit --class com.ucloud.spark.examples.HiveFromSpark --master yarn --deploy-mode cluster --num-executors 4 --executor-cores 1 --files /home/hadoop/hive/conf/hive-site.xml --jars /home/hadoop/spark/lib/datanucleus-api-jdo-3.2.6.jar,/home/hadoop/spark/lib/datanucleus-rdbms-3.2.9.jar,/home/hadoop/spark/lib/datanucleus-core-3.2.10.jar /data/HiveFromSpark/target/scala-2.10/hivefromspark_2.10-1.0.jar
 ```
 
-### 3.3 Python - PI示例
+### 3.3 Python - 示例
 
+#### 3.3.1 PI示例
 > 注解：请参考spark安装目录下examples/src/main/python目录下的实例程序。
 
 **示例代码**
@@ -468,10 +488,23 @@ if __name__ == "__main__":
 ```
 spark-submit  --master yarn --deploy-mode client --num-executors 4 --executor-cores 1 --executor-memory 2G $SPARK_HOME/examples/src/main/python/pi.py 100
 ```
-
 最终在console的日志中会出现类似“Pi is roughly 3.141039”的结果
 
-## 4\. Spark Streaming
+#### 3.3.2 打包python依赖
+如果我们的python应用有很多源文件（或者有目录层次）或者依赖了第三方模块，那么在提交spark任务的时候，需要打包提交到集群。
+以打包第三方依赖为例，打包依赖到一个zip文件：
+```
+  pip install -t dependencies -r requirements.txt
+  cd dependencies
+  zip -r ../dependencies.zip .
+```
+然后在spark-submit时添加参数
+```
+  spark-submit --py-files dependencies.zip,other-libs.zip main.py --job jobname
+```
+> 纯python语言的模块可以被从zip包import，但是c-extension模块是不可以的。必须被OS runtime加载。PyInstaller, py2exe和其他工具都有这个问题。所以只能到集群各个节点安装这样的依赖模块。
+
+## 4. Spark Streaming
 
 请参考 <http://static.ucloud.cn/6799401b027e12e2206591051a107507.pdf> 1.6章节
 
