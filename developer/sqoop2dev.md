@@ -12,7 +12,7 @@ REST API、JAVA API、WEB UI以及CLI控制台方式进行访问，与Sqoop的�
 
 ### 1.1 创建mysql数据
 
-Mysql数据源以UDB为例（创建UDB方式可以参考https://docs.ucloud.cn/database/udb-mysql/quick）
+Mysql数据源以UDB为例（创建UDB方式可以参考https://docs.ucloud.cn/database/udb-mysql/quick/create）
 
 连接Mysql,并创建数据库sqoop和表sqoop
 
