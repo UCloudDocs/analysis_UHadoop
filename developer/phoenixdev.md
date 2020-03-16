@@ -51,11 +51,13 @@ Phoenix会自动将表名和字段名转换为大写字母，如果不想转换�
 ```
 
 * 插入数据
+
 ``` 
 0: jdbc:phoenix:> upsert into test values (1,'uhadoop');
 0: jdbc:phoenix:> upsert into test values (2,'phoenix');
 
 ```
+
 *  查看表内容
 
 ```
@@ -67,6 +69,7 @@ Phoenix会自动将表名和字段名转换为大写字母，如果不想转换�
 ```
 0: jdbc:phoenix:> delete from test where mykey=1;
 ```
+
 * 为表创建索引
 
 ```
