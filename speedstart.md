@@ -6,7 +6,7 @@
 
 ## 创建集群
 
-本章简单介绍了用户使用UHadoop服务时如何快速创建集群，如已创建完毕，请跳至第二章查看如何[提交任务](http://docs.ucloud.cn/analysis/uhadoop/speedstart#提交任务)。
+本章简单介绍了用户使用UHadoop服务时如何快速创建集群，如已创建完毕，请跳至第二章查看如何[提交任务](http://docs.ucloud.cn/uhadoop/speedstart#提交任务)。
 
 #### 1、进入产品页面
 
@@ -18,7 +18,7 @@
 
 #### 3、按需配置【基本设置】
 
-> VPC和子网信息必填。详情参考[私有网络VPC](https://docs.ucloud.cn/network/vpc/vpc)。
+> VPC和子网信息必填。详情参考[私有网络VPC](https://docs.ucloud.cn/vpc/vpc)。
 
 #### 4、软件设置
 
@@ -81,7 +81,7 @@ HDFS框架和计算框架适用于存储计算分离架构。HDFS集群可作为
 CPU、MEM的选择可按照计算复杂度与数据读写的频度，如果计算不是很复杂，小配置即可，如果复杂度较高，建议4核以上机型。
 Spark对内存需求较大，建议选择12G MEM以上的机型。
 
-> 了解各节点配置详情，请参考[产品价格](https://docs.ucloud.cn/analysis/uhadoop/price)。
+> 了解各节点配置详情，请参考[产品价格](https://docs.ucloud.cn/uhadoop/price)。
 
 #### 6、访问设置
 
@@ -104,7 +104,7 @@ Spark对内存需求较大，建议选择12G MEM以上的机型。
 - 通过控制台登录。
 
 - 绑定外网eip，本地可通过外网ssh连接登录。目前仅master节点支持绑定。
-  >Eip使用详情请见[EIP说明文档](https://docs.ucloud.cn/network/unet/eip)。
+  >Eip使用详情请见[EIP说明文档](https://docs.ucloud.cn/unet/eip)。
 
   本例中可通过\`ssh root@106.75.135.10 -p22\`进行登录。
 

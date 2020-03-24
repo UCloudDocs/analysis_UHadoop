@@ -129,7 +129,7 @@ c) 通过云主机（uhost）内网ssh进行登录。本例中可在云主机上
 
 ![](/images/canshuxinzeng02.png)
 
-更多关于队列配置内容可参考[队列配置](https://docs.ucloud.cn/analysis/uhadoop/operate/config)及[Apache官网介绍](https://hadoop.apache.org/docs/r2.7.1/hadoop-yarn/hadoop-yarn-site/FairScheduler.html)。
+更多关于队列配置内容可参考[队列配置](https://docs.ucloud.cn/uhadoop/operate/config)及[Apache官网介绍](https://hadoop.apache.org/docs/r2.7.1/hadoop-yarn/hadoop-yarn-site/FairScheduler.html)。
 
 ## 告警与监控
 

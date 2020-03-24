@@ -5,7 +5,7 @@
 ## Hive执行sql任务太慢，是否可以支持hive on spark？
 
 UHadoop暂时未支持hive on
-spark，但可通过使用[Spark-sql](http://docs.ucloud.cn/analysis/uhadoop/developer/sparkdev#spark-sql)代替，或者启用[Spark-thriftserver](http://docs.ucloud.cn/analysis/uhadoop/developer/sparkdev#spark-thriftserver)，通过beeline进行连接。
+spark，但可通过使用[Spark-sql](http://docs.ucloud.cn/uhadoop/developer/sparkdev#spark-sql)代替，或者启用[Spark-thriftserver](http://docs.ucloud.cn/uhadoop/developer/sparkdev#spark-thriftserver)，通过beeline进行连接。
 
 ## 执行SQL语句时，map/reduce任务内存不足怎么办？
 

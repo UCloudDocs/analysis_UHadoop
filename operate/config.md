@@ -5,7 +5,7 @@
 ## Hadoop配置队列
 
 - 用户可于 控制台-服务管理
-进行队列配置，具体可参考[基本操作](https://docs.ucloud.cn/analysis/uhadoop/operate/base)。
+进行队列配置，具体可参考[基本操作](https://docs.ucloud.cn/uhadoop/operate/base)。
 
 由于Fair Scheduler比Capacity Scheduler 支持的功能丰富，这里只介绍前者。
 
