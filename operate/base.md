@@ -163,7 +163,7 @@ c) 通过云主机（uhost）内网ssh进行登录。本例中可在云主机上
 
 3.设置防火墙策略
 
-请参考：<https://doc.ucloud.cn/network/firewall/firewall>
+请参考：<https://docs.ucloud.cn/unet/firewall/guide>
 
 4.为绑定外网IP的主机配置防火墙
 
