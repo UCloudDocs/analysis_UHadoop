@@ -104,7 +104,7 @@ Spark对内存需求较大，建议选择12G MEM以上的机型。
 - 通过控制台登录。
 
 - 绑定外网eip，本地可通过外网ssh连接登录。目前仅master节点支持绑定。
-  >Eip使用详情请见[EIP说明文档](https://docs.ucloud.cn/unet/eip)。
+  >Eip使用详情请见[EIP说明文档](https://docs.ucloud.cn/unet/eip/guide)。
 
   本例中可通过\`ssh root@106.75.135.10 -p22\`进行登录。
 
