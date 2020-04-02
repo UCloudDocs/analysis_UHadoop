@@ -6,7 +6,7 @@
 
 \- 如果已购买同一可用区下带有外网IP的UHost，可登陆UHost，再通过ssh方式连接集群任一节点的内网IP。
 
-详见：[faq\#我的主机只有内网IP，可以通过哪些方式访问这台机器呢？](https://docs.ucloud.cn/unet/faq/access)
+详见：[我的主机只有内网IP，可以通过哪些方式访问这台机器呢？](https://docs.ucloud.cn/unet/faq/access?id=%e6%88%91%e7%9a%84%e4%b8%bb%e6%9c%ba%e5%8f%aa%e6%9c%89%e5%86%85%e7%bd%91ip%ef%bc%8c%e5%8f%af%e4%bb%a5%e9%80%9a%e8%bf%87%e5%93%aa%e4%ba%9b%e6%96%b9%e5%bc%8f%e8%ae%bf%e9%97%ae%e8%bf%99%e5%8f%b0%e6%9c%ba%e5%99%a8%e5%91%a2%ef%bc%9f)
 
 \- 将集群的master节点绑定外网IP，ssh连接此外网IP。集群节点上可直接使用hdfs、hive、hbase、spark相关命令。
 

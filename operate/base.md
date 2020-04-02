@@ -34,7 +34,7 @@
 
 a) 通过控制台登录。如果节点机型是物理机，那么由于不同服务器厂商标准不同，暂不能通过控制台登录集群。
 
-b) 绑定外网eip，本地可通过外网ssh连接登录。目前仅master节点支持绑定。Eip使用详情请见 EIP说明文档 本例中可通过”ssh
+b) 绑定外网eip，本地可通过外网ssh连接登录。目前仅master节点支持绑定。Eip使用详情请见 [EIP说明文档](https://docs.ucloud.cn/unet/eip/guide) 本例中可通过”ssh
 root@106.75.135.10 -p22”进行登录。
 
 c) 通过云主机（uhost）内网ssh进行登录。本例中可在云主机上通过”ssh root@10.13.186.23 -p22”进行登录。
@@ -163,7 +163,7 @@ c) 通过云主机（uhost）内网ssh进行登录。本例中可在云主机上
 
 3.设置防火墙策略
 
-请参考：<https://docs.ucloud.cn/unet/firewall/guide>
+请参考：[防火墙操作指南](https://docs.ucloud.cn/unet/firewall/guide)
 
 4.为绑定外网IP的主机配置防火墙
 
