@@ -6,7 +6,7 @@
 
 \- 如果已购买同一可用区下带有外网IP的UHost，可登陆UHost，再通过ssh方式连接集群任一节点的内网IP。
 
-详见：[faq\#我的主机只有内网IP，可以通过哪些方式访问这台机器呢？](/network/unet/faq#我的主机只有内网IP，可以通过哪些方式访问这台机器呢？)
+详见：[我的主机只有内网IP，可以通过哪些方式访问这台机器呢？](https://docs.ucloud.cn/unet/faq/access?id=%e6%88%91%e7%9a%84%e4%b8%bb%e6%9c%ba%e5%8f%aa%e6%9c%89%e5%86%85%e7%bd%91ip%ef%bc%8c%e5%8f%af%e4%bb%a5%e9%80%9a%e8%bf%87%e5%93%aa%e4%ba%9b%e6%96%b9%e5%bc%8f%e8%ae%bf%e9%97%ae%e8%bf%99%e5%8f%b0%e6%9c%ba%e5%99%a8%e5%91%a2%ef%bc%9f)
 
 \- 将集群的master节点绑定外网IP，ssh连接此外网IP。集群节点上可直接使用hdfs、hive、hbase、spark相关命令。
 
@@ -67,9 +67,9 @@ done
 1\.
 若是Master节点，可以登录到该节点，通过ps命令找到内存占用较高的进程，如果确认该进程为自己业务启动的且不需要的，可以直接kill掉。如果是hadoop集群相关进程，建议升级Master节点来彻底解决。
 
-升级Master可参考[general\#集群单个节点配置不够，如CPU，MEM或者磁盘，需要怎么升级](/analysis/uhadoop/user/general#集群单个节点配置不够，如CPU，MEM或者磁盘，需要怎么升级)
+升级Master可参考[general\#集群单个节点配置不够，如CPU，MEM或者磁盘，需要怎么升级](uhadoop/user/general#集群单个节点配置不够，如CPU，MEM或者磁盘，需要怎么升级)
 
-Master节点可选机型列表： <https://docs.ucloud.cn/analysis/uhadoop/price>
+Master节点可选机型列表： <https://docs.ucloud.cn/uhadoop/price>
 
 2\.
 若是Core节点，如果未自行安装服务，一般为DataNode、HBase-Regionserver和Yarn使用内存较多。可通过下列步骤解决
@@ -83,17 +83,17 @@ Tab下的“参数配置”功能修改）；
 \-- 若业务上需求更多内存资源，可适当添加Core/Task节点
 
 \--
-若是单节点CPU、MEM不足，可参考[general\#集群单个节点配置不够，如CPU，MEM或者磁盘，需要怎么升级](/analysis/uhadoop/user/general#集群单个节点配置不够，如CPU，MEM或者磁盘，需要怎么升级)
+若是单节点CPU、MEM不足，可参考[general\#集群单个节点配置不够，如CPU，MEM或者磁盘，需要怎么升级](uhadoop/user/general#集群单个节点配置不够，如CPU，MEM或者磁盘，需要怎么升级)
 
 ## 集群单个节点配置不够，如CPU，MEM或者磁盘，需要怎么升级？
 
 升级Master：请通过工单形式，需提供（集群ID，原Master机型，待升级Master机型，可以执行操作时间），我们目前支持非标升级，且须同时升级2个Master，升级过程中Master节点需要重启，停止服务大概1分钟之内，注意需要保证集群不欠费，且账户内有足够余额满足升级费用。
 
-Master节点可选机型列表： <https://docs.ucloud.cn/analysis/uhadoop/price>
+Master节点可选机型列表： <https://docs.ucloud.cn/uhadoop/price>
 
 若为Core节点，默认不支持单个节点纵向升级，如果需要扩充资源，可以横向添加节点；如果遇到内存或其它单个节点的资源瓶颈，可以联系我们提供后台升级，升级是通过用高配节点替换低配节点完成，期间需要迁移大量数据，可能影响到集群业务，数据量大集群不建议此操作。
 
-Core节点可选机型列表： <https://docs.ucloud.cn/analysis/uhadoop/price>
+Core节点可选机型列表： <https://docs.ucloud.cn/uhadoop/price>
 
 ## 我想关闭某台机器上的某个服务，或者关闭服务开机启动，怎么办？
 

@@ -10,10 +10,10 @@
 
 ### 2.查看任务执行日志
 
-若任务为后台执行或定时任务，首先需要知道失败的任务ID，可通过获取日志详情分析日志报错（查询日志方法可见[日志查看](https://docs.ucloud.cn/analysis/uhadoop/operate/general)）
+若任务为后台执行或定时任务，首先需要知道失败的任务ID，可通过获取日志详情分析日志报错（查询日志方法可见[日志查看](https://docs.ucloud.cn/uhadoop/operate/general)）
 
 Tips:
-常见任务失败ERROR可参考[常见任务ERROR](https://docs.ucloud.cn/analysis/uhadoop/user/error)
+常见任务失败ERROR可参考[常见任务ERROR](https://docs.ucloud.cn/uhadoop/user/error)
 
 ## 排查工具
 

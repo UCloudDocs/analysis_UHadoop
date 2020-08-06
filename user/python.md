@@ -21,4 +21,4 @@
 可以在[PyPI网站](https://pypi.python.org)搜索需要的依赖包。下载后解压，并执行`python setup.py
 install`来安装。
 
-具体安装步骤，可以参考[Python开发指南](/analysis/uhadoop/developer/pythondev)。
+具体安装步骤，可以参考[Python开发指南](uhadoop/developer/pythondev)。

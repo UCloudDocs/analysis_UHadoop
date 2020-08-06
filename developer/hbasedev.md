@@ -134,7 +134,7 @@ hbase(main):005:0> major_compact 'test-nolzo'
 
 ## 3. 使用Hive读取HBase数据
 
-请参考[Hive应用开发](https://docs.ucloud.cn/analysis/uhadoop/developer/hivedev#hive外表读取hbase数据)
+请参考[Hive应用开发](https://docs.ucloud.cn/uhadoop/developer/hivedev#hive外表读取hbase数据)
 
 ## 4. HBase应用开发
 

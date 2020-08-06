@@ -48,7 +48,7 @@ yarn页面查看提交到yarn上的任务日志详情。由于任务日志界面
 #### a.配置vpn
 
 可参考
-[配置openvpn](/analysis/uhadoop/operate/openvpn)文档配置vpn。
+[配置openvpn](/uhadoop/operate/openvpn)文档配置vpn。
 
 > 注解：配置完成后，可在访问端加上集群节点中最新的host文件即可（登陆集群中任意节点，查看/etc/hosts）。
 

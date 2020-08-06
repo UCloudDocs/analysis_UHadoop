@@ -54,7 +54,7 @@
 
 请参考:
 
-[防火墙使用手册](/network/unet/firewall)
+[防火墙使用手册](/unet/firewall)
 
 ![](/images/52.jpg)
 

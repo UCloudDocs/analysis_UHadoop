@@ -10,7 +10,7 @@ Oozie提出了Coordinator的概念，能够将每个工作流的Job作为一个A
 Job，并制定触发时间和频率，还可以配置数据集、并发数等。一个Coordinator
 Job包含了在Job外部设置执行周期和频率的语义。类似于在工作流外部专家了一个协调器来管理这些工作流的工作流Job的运行。
 
-如果在集群安装了Hue，也可以通过页面操作配置工作流，具体操作步骤[点此查看](https://docs.ucloud.cn/analysis/uhadoop/developer/huedev#配置工作流)。以下介绍通过后台配置工作流的方法：
+如果在集群安装了Hue，也可以通过页面操作配置工作流，具体操作步骤[点此查看](https://docs.ucloud.cn/uhadoop/developer/huedev#配置工作流)。以下介绍通过后台配置工作流的方法：
 
 ## 1. 运行Coordinator Job
 

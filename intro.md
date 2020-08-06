@@ -39,7 +39,7 @@ HBase默认采用HA方式部署，2个HMaster分别部署于master1与master2，
 1.5 Spark
 
 Spark采用On
-Yarn模式，具体可参考[Spark开发指南](https://docs.ucloud.cn/analysis/uhadoop/developer/sparkdev)。
+Yarn模式，具体可参考[Spark开发指南](https://docs.ucloud.cn/uhadoop/developer/sparkdev)。
 
 ## 2、产品特色与优点
 

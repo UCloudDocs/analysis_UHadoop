@@ -7,7 +7,7 @@
 由于在UHadoop中Master配置是HA的，故NameNode也有2个，同一时刻一个节点为Active，另一个为Standby,一般内存跑高或者网络波动都可能会导致主从切换，不建议客户端使用Master节点IP访问HDFS数据。
 
 正确使用方法：
-如果所在机器已经部署好UHadoop客户端（部署方法请参考[hadoopdev\#在UHost上安装Hadoop客户端](/analysis/uhadoop/developer/hadoopdev#在UHost上安装Hadoop客户端)），可直接通过hadoop
+如果所在机器已经部署好UHadoop客户端（部署方法请参考[hadoopdev\#在UHost上安装Hadoop客户端](uhadoop/developer/hadoopdev#在UHost上安装Hadoop客户端)），可直接通过hadoop
 fs -ls / 或者hadoop fs -ls hdfs://Ucluster/访问
 
 如果是客户端代码，可以将集群/home/hadoop/conf/hdfs-site.xml和/home/hadoop/conf/core-site.xml拷贝到本地程序中，通过conf.addResource加载2个文件，即可通过hdfs://Ucluster/访问HDFS数据
