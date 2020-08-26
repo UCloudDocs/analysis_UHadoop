@@ -45,12 +45,12 @@
 | Core            | 密集存储II型实例 ​   | D2-xlarge ​       | 4   | 12    | 16000(SATA) ​    | 1135        | 1135           |
 | Core            | 密集存储II型实例 ​   | D2-2xlarge ​      | 8   | 24    | 32000(SATA) ​    | 2235        | 2235           |
 | Core            | 密集存储II型实例 ​   | D2-4xlarge ​      | 16  | 48    | 64000(SATA) ​    | 4541        | 4541           |
-|                 | ​             |                   |     |       |                  |             | ​              |
+|                 | ​                 |                   |     |       |                  |             | ​              |
 | Core            | HDFS存储型实例 ​   | HDFS-large ​      | 2   | 4     | 8000(SATA) ​     | 467         | 467            |
 | Core            | HDFS存储型实例 ​   | HDFS-xlarge ​     | 4   | 8     | 16000(SATA) ​    | 934         | 934            |
 | Core            | HDFS存储型实例 ​   | HDFS-2xlarge ​    | 4   | 8     | 32000(SATA) ​    | 1868        | 1868           |
 | Core            | HDFS存储型实例 ​   | HDFS-4xlarge ​    | 4   | 8     | 64000(SATA) ​    | 3736        | 3736           |
-|                 | ​             |                   |     |       |                  |             | ​              |
+|                 | ​                 |                   |     |       |                  |             | ​              |
 | Core            | HDFS存储II型实例 ​ | HDFS.IO-large ​   | 2   | 4     | 4000(SATA) ​     | 351         | 351            |
 | Core            | HDFS存储II型实例 ​ | HDFS.IO-xlarge ​  | 2   | 4     | 8000(SATA) ​     | 702         | 702            |
 | Core            | HDFS存储II型实例 ​ | HDFS.IO-2xlarge ​ | 4   | 8     | 16000(SATA) ​    | 1404        | 1404           |
@@ -59,7 +59,7 @@
 | Core            | I/​O增强型 ​     | F1-large ​        | 4   | 16    | 500(SSD) ​       | 1078        | 1198           |
 | Core            | I/​O增强型 ​     | F1-xlarge ​       | 8   | 32    | 1000(SSD) ​      | 1978        | 2198           |
 | Core            | I/​O增强型 ​     | F1-2xlarge ​      | 16  | 64    | 2000(SSD) ​      | 3998        | 3998           |
-|                 | ​             |                   |     |       |                  |             | ​              |
+|                 | ​               |                    |     |       |                  |             | ​              |
 | Core            | 物理机 ​         | UHADOOP-4 ​       | 32  | 96    | 8000\*12(SATA) ​ | 6072        | 6600           |
 | Core            | 物理机 ​         | UHADOOP-4-v2 ​       | 32  | 96    | 8000\*12(SATA) ​ | 6072        | 6600           |
 | Core & Master ​ | 物理机 ​         | UHADOOP-6 ​       | 48  | 192   | 4800(SSD) ​      | 8360        | 8360           |
