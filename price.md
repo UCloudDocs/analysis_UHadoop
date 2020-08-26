@@ -24,11 +24,12 @@
 | Master&​Task ​  | 内存优化Ⅱ型实例 ​    | H2-xlarge ​       | 8   | 32    | 200(SSD) ​       | 1199        | 1598           |
 | Master&​Task ​  | 内存优化Ⅱ型实例 ​    | H2-2xlarge ​      | 16  | 64    | 400(SSD) ​       | 2249        | 3998           |
 | Master&​Task ​  | 内存优化Ⅱ型实例 ​    | H2-4xlarge ​      | 32  | 64    | 1000(SSD) ​      | 4650        | 5100           |
+| Master&​Task ​  | 内存优化Ⅱ型实例 ​    | H2-6xlarge ​      | 32  | 128    | 1000(SSD) ​      | 5000        | 5650           |
 |                 | ​             |                   |     |       |                  |             | ​              |
 | Master&​Task ​  | RSSD快杰机型 ​    | N4-large ​        | 4   | 16    | 100(SSD) ​       | 590         | 590           |
 | Master&​Task ​  | RSSD快杰机型 ​    | N4-xlarge ​       | 8   | 32    | 200(SSD) ​       | 1180        | 1180           |
 | Master&​Task ​  | RSSD快杰机型 ​    | N4-2xlarge ​      | 16  | 64    | 400(SSD) ​       | 2360        | 2360           |
-| Master&​Task ​  | RSSD快杰机型 ​    | N4-4xlarge ​      | 32  | 64    | 1000(SSD) ​      | 4624        | 4624           |
+| Master&​Task ​  | RSSD快杰机型 ​    | N4-4xlarge ​      | 32  | 128    | 1000(SSD) ​      | 4624        | 4624           |
 |                 | ​             |                   |     |       |                  |             | ​              |
 | Core            | RSSD快杰机型 ​      | N3-large ​        | 2   | 8     | 500(RSSD) ​     | 565         | 565            |
 | Core            | RSSD快杰机型 ​      | N3-xlarge ​       | 4   | 16    | 1000(RSSD) ​     | 1130         | 1130            |
