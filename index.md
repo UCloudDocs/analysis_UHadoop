@@ -2,9 +2,10 @@
 
 # 托管 Hadoop 集群 UHadoop
 
-托管 Hadoop 集群（UHadoop）是基于 Hadoop 开源框架的大数据处理产品，集成了 Spark、Hive、HBase、Presto
-等大数据处理常见应用软件。
+托管大数据服务UHadoop提供下面三种类型的服务：
 
-支持项目级别的共享 HDFS 存储，即在同一项目中，多个 UHadoop 计算集群可以读写同一个 UHadoop 存储集群的数据。
+1.大数据机型服务：利用云上IAAS优势，根据大数据应用场景，提供高性价比的机型和基础运维管理服务
 
-提供快速扩展、监控和告警等功能，可更便捷管理集群，从而轻松快速并经济地处理大量的数据。
+2.USDP服务：USDP（UCloud Smart Data Platform）服务部署在用户集群上，类似Ambari和Cloudra Manager服务用来对Hadoop生态组件提供智能的运维、管理服务 【即将推出】
+
+3.UHadoop服务：UHadoop是使用 Hadoop、Spark、HBase、Hive、Presto等开源组件，构建在虚拟机或者物理机上的生态大数据产品。
