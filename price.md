@@ -19,10 +19,23 @@
 | Master&​Task ​  | 计算优化Ⅱ型实例 ​    | H1-xlarge ​       | 8   | 16    | 200(SSD) ​       | 933         | 1098           |
 | Master&​Task ​  | 计算优化Ⅱ型实例 ​    | H1-2xlarge ​      | 16  | 32    | 400(SSD) ​       | 1783        | 2098           |
 | Master&​Task ​  | 计算优化Ⅱ型实例 ​    | H1-4xlarge ​      | 32  | 64    | 500(SSD) ​       | 4300        | 4350           |
+|                 |               |                   |     |       |                  |             |                |
 | Master&​Task ​  | 内存优化Ⅱ型实例 ​    | H2-large ​        | 4   | 16    | 100(SSD) ​       | 599         | 1198           |
 | Master&​Task ​  | 内存优化Ⅱ型实例 ​    | H2-xlarge ​       | 8   | 32    | 200(SSD) ​       | 1199        | 1598           |
 | Master&​Task ​  | 内存优化Ⅱ型实例 ​    | H2-2xlarge ​      | 16  | 64    | 400(SSD) ​       | 2249        | 3998           |
 | Master&​Task ​  | 内存优化Ⅱ型实例 ​    | H2-4xlarge ​      | 32  | 64    | 1000(SSD) ​      | 4650        | 5100           |
+|                 | ​             |                   |     |       |                  |             | ​              |
+| Master&​Task ​  | RSSD快杰机型 ​    | N4-large ​        | 4   | 16    | 100(SSD) ​       | 590         | 590           |
+| Master&​Task ​  | RSSD快杰机型 ​    | N4-xlarge ​       | 8   | 32    | 200(SSD) ​       | 1180        | 1180           |
+| Master&​Task ​  | RSSD快杰机型 ​    | N4-2xlarge ​      | 16  | 64    | 400(SSD) ​       | 2360        | 2360           |
+| Master&​Task ​  | RSSD快杰机型 ​    | N4-4xlarge ​      | 32  | 64    | 1000(SSD) ​      | 4624        | 4624           |
+|                 | ​             |                   |     |       |                  |             | ​              |
+| Core            | RSSD快杰机型 ​      | N3-large ​        | 2   | 8     | 500(RSSD) ​     | 565         | 565            |
+| Core            | RSSD快杰机型 ​      | N3-xlarge ​       | 4   | 16    | 1000(RSSD) ​     | 1130         | 1130            |
+| Core            | RSSD快杰机型 ​      | N3-2xlarge ​      | 8   | 32    | 2000(RSSD) ​    | 2260        | 2260           |
+| Core            | RSSD快杰机型 ​      | N3-4xlarge ​      | 16  | 64    | 4000(RSSD) ​    | 4520        | 4520           |
+| Core            | RSSD快杰机型 ​      | N3-8xlarge ​      | 32  | 128   | 8000(RSSD) ​    | 8824        | 8824           |
+
 |                 | ​             |                   |     |       |                  |             | ​              |
 | Core            | 密集存储实例 ​      | D1-large ​        | 2   | 6     | 4000(SATA) ​     | 498         | 498            |
 | Core            | 密集存储实例 ​      | D1-xlarge ​       | 4   | 12    | 8000(SATA) ​     | 998         | 998            |
@@ -49,4 +62,5 @@
 | Core            | I/​O增强型 ​     | F1-2xlarge ​      | 16  | 64    | 2000(SSD) ​      | 3998        | 3998           |
 |                 | ​             |                   |     |       |                  |             | ​              |
 | Core            | 物理机 ​         | UHADOOP-4 ​       | 32  | 96    | 8000\*12(SATA) ​ | 6072        | 6600           |
+| Core            | 物理机 ​         | UHADOOP-4-v2 ​       | 32  | 96    | 8000\*12(SATA) ​ | 6072        | 6600           |
 | Core & Master ​ | 物理机 ​         | UHADOOP-6 ​       | 48  | 192   | 4800(SSD) ​      | 8360        | 8360           |
