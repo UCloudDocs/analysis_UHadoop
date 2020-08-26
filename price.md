@@ -14,7 +14,7 @@
 | Master&​Task ​  | 内存优化实例 ​      | R1-xlarge ​       | 4   | 32    | 80(SATA) ​       | 839         | 1198           |
 | Master&​Task ​  | 内存优化实例 ​      | R1-3xlarge ​      | 16  | 64    | 400(SATA) ​      | 2013        | 2876           |
 | Master&​Task ​  | 内存优化实例 ​      | R1-4xlarge ​      | 32  | 96    | 800(SATA) ​      | 4527        | 4527           |
-|                 |               |                   |     |       |                  |             |                |
+|                 |                     |                   |     |       |                  |             |                |
 | Master&​Task ​  | 计算优化Ⅱ型实例 ​    | H1-large ​        | 4   | 8     | 100(SSD) ​       | 508         | 598            |
 | Master&​Task ​  | 计算优化Ⅱ型实例 ​    | H1-xlarge ​       | 8   | 16    | 200(SSD) ​       | 933         | 1098           |
 | Master&​Task ​  | 计算优化Ⅱ型实例 ​    | H1-2xlarge ​      | 16  | 32    | 400(SSD) ​       | 1783        | 2098           |
