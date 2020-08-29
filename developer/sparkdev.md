@@ -101,12 +101,6 @@ spark-shell是Spark提供的可通过scala语言快速实现任务执行的方�
 ```
     scala> sqlContext.sql("FROM src SELECT key, value").collect().foreach(println);
 ```
-### 2.3 Spark-pyspark
-命令行pyspark是Spark提供的可通过python语言快速实现任务执行的方式。
-- 进入命令行交互式客户端
-  ```
-  /pyspark
-  ```
 - 示例
 
   ```
@@ -117,6 +111,25 @@ spark-shell是Spark提供的可通过scala语言快速实现任务执行的方�
   scala> counts.reduceByKey(_+_).saveAsTextFile("/home/mine/partition_spark/hash")
   scala>
   ```
+
+
+### 2.3 Spark-pyspark shell
+命令行pyspark是Spark提供的可通过python语言快速实现任务执行的方式。
+- 进入命令行交互式客户端
+  ```
+  pyspark
+  ```
+- 示例
+
+  ```
+  >>> logFile="file:////home/hadoop/conf/core-site.xml"
+  >>> logData=sc.textFile(logFile).cache()
+  >>> numAs=logData.filter(lambda s:'a' in s).count()
+  >>> numBs=logData.filter(lambda s:'b' in s).count()                             
+  >>> print("Line with a:%i,line with b:%i" % (numAs,numBs))
+  Line with a:25,line with b:7
+  ```
+
 ### 2.4 Spark-sql
 
 spark-sql是Spark提供的一种用SQL的方式处理结构化数据的组件，它提供了一个叫做DataFrames的可编程抽象数据模型，并且可被视为一个分布式的SQL查询引擎，它支持大部分常用的Hive
