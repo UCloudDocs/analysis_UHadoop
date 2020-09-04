@@ -74,18 +74,15 @@ client added. Configuration available in: /root/client.ovpn
 
 ### 2.1 MAC
 
-下载安装Tunnelblick[客户端安装软件](https://tunnelblick.net/downloads.html)
+下载安装Tunnelblick[客户端下载](https://tunnelblick.net/downloads.html)
 
 将client.ovpn拖到Tunnelblick就可以访问vpn server。
 
 ### 2.2 Windows
 
-可以直接在openvpn官网下载客户端，选择自己操作系统对应的版本[客户端安装软件](https://openvpn.net/community-downloads/)
-client安装：
+可以直接在openvpn官网下载客户端，选择自己操作系统对应的版本[客户端下载](https://openvpn.net/community-downloads/)
 
-将client.ovpn放到c:/Program Files/OpenVPN/config/目录下。
-
-到桌面双击openvpn图标即可。
+通过openvpn上点击import profile选择client.ovpn，把对应的信息加载进去
 
 ### 2.3 Liunx
 
