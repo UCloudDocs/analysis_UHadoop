@@ -2,56 +2,83 @@
 
 # 配置openvpn
 
-按以下步骤，可以为绑定EIP的master节点或者绑定EIP的uhost安装openvpn
+按以下步骤，可以在绑定EIP的uhost安装openvpn，下面以centos7操作系统示例：
 
 ## 1.服务端
 
-登录master节点或者绑定EIP的uhost，下载[安装脚本](http://uhadoop-new.ufile.ucloud.com.cn/openvpn/auto_deploy_openvpn.sh)并执行:
+  1： 创建一个云主机并绑定EIP，并为防火墙开放1194端口，选择udp协议
+  
+  2：从github下载自动部署脚本（使用其中的openvpn-install.sh脚本），git地址：`https://github.com/Nyr/openvpn-install`
+  ```
+    git clone https://github.com/Nyr/openvpn-install.git   
+  ```
+  3. 直接运行 openvpn-install.sh脚本
+    ``` 
+    cd openvpn-install
+    sh openvpn-install.sh
+  ```
+  这里会自动识别eip的地址，如果需要修改对外server的IP，可以手动输入，如果使用默认，直接回车：  
+```
+Welcome to this OpenVPN road warrior installer!
+
+This server is behind NAT. What is the public IPv4 address or hostname?
+Public IPv4 address / hostname [10.75.37.68]: 
 
 ```
-wget http://uhadoop-new.ufile.ucloud.com.cn/openvpn/auto_deploy_openvpn.sh
-sh auto_deploy_openvpn.sh
+选择vpn server的协议类型，输入1是udp，2是tcp，默认使用udp，如果选择默认，直接回车：
 ```
-
+Which protocol should OpenVPN use?
+   1) UDP (recommended)
+   2) TCP
+Protocol [1]: 
+```
 执行完后，查看openvpn启动是否正常。
 
+vpn port设置，如果选择默认，可以直接回车
+```
+What port should OpenVPN listen to?
+Port [1194]: 
+```
+
+vpn dns设置，如果选择默认，可以直接回车：
+```
+Select a DNS server for the clients:
+   1) Current system resolvers
+   2) Google
+   3) 1.1.1.1
+   4) OpenDNS
+   5) Quad9
+   6) AdGuard
+DNS server [1]: 
+```
+创建server的同时，也会给创建一个客户端文件，输入客户端文件名（这里测试生成一个client-test.ovpn的文件）：
+
+```
+Enter a name for the first client:
+Name [client]: client-test
+```
+一路回车下去，会生成client.ovpn文件
+
+```
+Write out database with 1 new entries
+Data Base Updated
+
+client added. Configuration available in: /root/client.ovpn
+```
 ## 2.客户端
 
-将服务端生成的key(ca.crt, client1.crt, client1.key,
-ta.key)下载到本地，放到客户端配置文件同一目录下。
-
-客户端配置文件client.ovpn内容如下：
-
-```
-client 
-dev tun 
-proto udp 
-remote xxx.xxx.xxx.xxx 1194 ;(xxx.xxx.xx.xx是绑定的EIP) 
-ca ca.crt ;(相对路径) 
-cert xxx.crt ;(相对路径) 
-key xxx.key ;(相对路径) 
-; tls-auth ta.key 0 ;(这句要注释掉) 
-comp-lzo
-cipher AES-256-CBC 
-user nobody ;(仅供非 windows 客户端配置，windows 请用“;”注释掉）
-group nobody ;(仅供非 windows 客户端配置，windows 请用“;”注释掉） 
-persist-key 
-persist-tun
-```
-
-以下介绍各操作系统下客户端安装过程
+把server部署时生成的客户端用户文件，拷贝到本地。
 
 ### 2.1 MAC
 
-下载[客户端安装软件](http://uhadoop-new.ufile.ucloud.com.cn/openvpn/Tunnelblick_3.6.9_build_4685.dmg)
+下载安装Tunnelblick[客户端安装软件](https://tunnelblick.net/downloads.html)
 
-修改配置文件后，打开Tunnelblick，添加设置文件，将client.ovpn放到私人设置文件夹。
-
-最后，点击client.ovpn启用配置。
+将client.ovpn拖到Tunnelblick就可以访问vpn server。
 
 ### 2.2 Windows
 
-下载[客户端安装软件](http://uhadoop-new.ufile.ucloud.com.cn/openvpn/openvpn-2.2.2-install.exe)
+可以直接在openvpn官网下载客户端，选择自己操作系统对应的版本[客户端安装软件](https://openvpn.net/community-downloads/)
+client安装：
 
 将key和新建的client.ovpn放到c:/Program Files/OpenVPN/config/目录下。
 
