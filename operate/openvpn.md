@@ -83,7 +83,7 @@ client added. Configuration available in: /root/client.ovpn
 可以直接在openvpn官网下载客户端，选择自己操作系统对应的版本[客户端安装软件](https://openvpn.net/community-downloads/)
 client安装：
 
-将key和新建的client.ovpn放到c:/Program Files/OpenVPN/config/目录下。
+将client.ovpn放到c:/Program Files/OpenVPN/config/目录下。
 
 到桌面双击openvpn图标即可。
 
