@@ -9,21 +9,24 @@
   1： 创建一个云主机并绑定EIP，并为防火墙开放1194端口，选择udp协议
   
   2：从github下载自动部署脚本（使用其中的openvpn-install.sh脚本），git地址：`https://github.com/Nyr/openvpn-install`
+  
   ```
     git clone https://github.com/Nyr/openvpn-install.git   
   ```
   3. 直接运行 openvpn-install.sh脚本
-    ``` 
+  
+  ``` 
     cd openvpn-install
     sh openvpn-install.sh
   ```
-  这里会自动识别eip的地址，如果需要修改对外server的IP，可以手动输入，如果使用默认，直接回车：  
+  
+这里会自动识别eip的地址，如果需要修改对外server的IP，可以手动输入，如果使用默认，直接回车：  
+  
 ```
 Welcome to this OpenVPN road warrior installer!
 
 This server is behind NAT. What is the public IPv4 address or hostname?
 Public IPv4 address / hostname [10.75.37.68]: 
-
 ```
 选择vpn server的协议类型，输入1是udp，2是tcp，默认使用udp，如果选择默认，直接回车：
 ```
