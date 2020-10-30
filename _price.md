@@ -7,7 +7,7 @@ UHadoop 根据集群中节点的机型配置及数量进行计费。例如，北
 ## 产品价格
 <!-- udocs:price -->
 | 地域 | 可用区 | 类别 | 机型 | 适用节点 | 配置（CPU / 内存 / 硬盘） | 硬盘类型 | 月价格（元/月） | 年价格（元/月） | 操作 |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | 北京二 | 可用区E | 计算优化实例 | C1-large | Master & Task | 2核 / 4GB / 40GB | SATA本地盘 | 198 | 1980 | [立即购买](https://console.ucloud.cn/uhadoop/uhadoop) |
 | 北京二 | 可用区E | 计算优化实例 | C1-xlarge | Master & Task | 4核 / 8GB / 80GB | SATA本地盘 | 398 | 3980 | [立即购买](https://console.ucloud.cn/uhadoop/uhadoop) |
 | 北京二 | 可用区E | 计算优化实例 | C1-2xlarge | Master & Task | 8核 / 16GB / 160GB | SATA本地盘 | 798 | 7980 | [立即购买](https://console.ucloud.cn/uhadoop/uhadoop) |
