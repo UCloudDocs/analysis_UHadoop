@@ -16,7 +16,7 @@
 也可以通过外网下载最新版本安装脚本
 
 ```
-wget "http://udata-new.ufile.ucloud.com.cn/uhadoop/install_uhadoop_client_new.sh"
+wget http://new-uhadoop.cn-bj.ufileos.com/install_uhadoop_client_new.sh
 ```
 
 使用方法：
