@@ -1,7 +1,7 @@
 # 概览
 
 
-* [产品简介](/uhadoop/intro)
+* [产品简介。](/uhadoop/intro)
 * [快速上手](/uhadoop/speedstart)
 * [HDFS存储集群](/uhadoop/hdfscluster)
 * [元数据管理](/uhadoop/metadata)
