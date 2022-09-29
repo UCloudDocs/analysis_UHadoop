@@ -14,7 +14,7 @@
 
 ![](/images/operate/instance_client_instal.png)
 
-* 登录名：登陆主机用户名，如root或者ubuntu，请尽量提供root用户信息以便于顺利安装；
+* 登录名：登陆主机用户名，如root或者ubuntu；
 * 登陆密码：登陆用户名对应登陆密码；
 * 登陆端口：登陆端口，默认为22；
 
