@@ -10,7 +10,7 @@
 
 ### 1.1 控制台安装
 
-可通过控制台一键安装，参考：/uhadoop/operate/base。
+可通过控制台一键安装，参考：[客户端安装](/uhadoop/operate/base)。
 
 ### 1.2 自行安装
 
