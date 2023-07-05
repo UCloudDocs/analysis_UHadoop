@@ -1,4 +1,4 @@
-# 产品架构图
+# 产品架构
 
 ![](/images/jiagou.png)
 
@@ -16,9 +16,7 @@ Yarn同样默认采用HA方式部署，2个ResourceManager分别部署于master1
 
 ## 3. Hive
 
-Hive目前只支持On yarn模式，2个Hive-MetaStore分别部署于master1与master2，并连接本地的mysql，避免了单个master节点宕机引起的Hive服务故障
-
-可以通过HiveCli或者Beeline连接Hive服务。
+Hive目前只支持On yarn模式，2个Hive-MetaStore分别部署于master1与master2，元数据库支持云数据库或者本地MySQL，避免了单个master节点宕机引起的Hive服务故障，可以通过HiveCli或者Beeline连接Hive服务。
 
 ![](/images/developer/hive.jpg)
 
