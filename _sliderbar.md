@@ -1,4 +1,3 @@
-# 概览
 
 * 产品简介
     * [什么是UHadoop](/uhadoop/introduction/concept)
