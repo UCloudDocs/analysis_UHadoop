@@ -5,10 +5,43 @@
     * [产品架构](/uhadoop/introduction/architecture)
     * [产品优势](/uhadoop/introduction/advantages)
 * 操作指南
-    * [常用操作](/uhadoop/operate/general)
-    * [队列管理](/uhadoop/operate/config)
-    * [配置openvpn](/uhadoop/operate/openvpn)
-    * [基本操作](/uhadoop/operate/base)
+    * 集群管理
+        * [集群创建](/uhadoop/guide/instance/create)
+        * [集群列表](/uhadoop/guide/instance/list)
+        * [集群概览](/uhadoop/guide/instance/detail)
+        * [数据均衡](/uhadoop/guide/instance/balance)
+        * [安装客户端](/uhadoop/guide/instance/client)
+        * [集群删除](/uhadoop/guide/instance/delete)
+    * 服务管理
+        * [服务列表](/uhadoop/guide/service/list)
+        * [组件管理](/uhadoop/guide/service/manage)
+        * [参数配置](/uhadoop/guide/service/config)
+        * [重启服务](/uhadoop/guide/service/restart)
+        * [开启服务](/uhadoop/guide/service/install)
+        * [关闭服务](/uhadoop/guide/service/shutdown)
+    * Yarn Application跟踪
+        * [Yarn Application列表](/uhadoop/guide/application/list)
+        * [Application Master详情](/uhadoop/guide/application/detail)
+    * Yarn 队列管理
+        * [队列列表](/uhadoop/guide/queue/list)
+        * [创建队列](/uhadoop/guide/queue/create)
+        * [修改队列](/uhadoop/guide/queue/update)
+        * [删除队列](/uhadoop/guide/queue/delete)
+    * 节点管理
+        * [节点列表](/uhadoop/guide/node/list)
+        * [添加节点](/uhadoop/guide/node/add)
+        * [升级Master节点](/uhadoop/guide/node/upgrade)
+        * [组件管理](/uhadoop/guide/node/components)
+        * [关机与开机](/uhadoop/guide/node/reboot)
+        * [绑定与解绑EIP](/uhadoop/guide/node/eip)
+        * [绑定防火墙](/uhadoop/guide/node/firewall)
+        * [Core节点下线](/uhadoop/guide/node/core_delete)
+        * [Task节点删除](/uhadoop/guide/node/task_delete)
+    * 监控告警
+        * [集群监控信息](/uhadoop/monitor/cluster)
+        * [节点告警信息](/uhadoop/monitor/node)
+        * [告警绑定](/uhadoop/monitor/alarm)
+    * 操作日志(/uhadoop/logs/operation)
 * 开发指南
     * [Hadoop开发指南](/uhadoop/developer/hadoopdev)
     * [Hive开发指南](/uhadoop/developer/hivedev)
