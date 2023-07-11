@@ -28,8 +28,8 @@
 
     - 修改US3令牌信息
 
-      - fs.us3.access.key：令牌公钥
-      - fs.us3.secret.key：令牌私钥
+      - fs.us3.access.key：US3令牌公钥
+      - fs.us3.secret.key：US3令牌私钥
 
       操作如下，完成以上两个参数修改之后，点击确定按钮，然后勾选重选提示选项重启Hadoop服务。
 
@@ -49,11 +49,11 @@
 
 * 查看文件列表
 
-  ![us3_guide_hdfs_ls](images/us3_guide_hdfs_ls.png)
+  ![us3_guide_hdfs_ls](../images/us3_guide_hdfs_ls.png)
 
 ### 3.2 Hive
 
-可用采用以下两种方式将数据关联US3上。
+可用采用以下两种方式将数据存储在US3上，选择其中一种即可。
 
 1. 整个数据库建立在US3上
 
