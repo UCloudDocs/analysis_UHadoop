@@ -25,6 +25,7 @@
     * [Presto开发指南](/uhadoop/developer/prestodev)
     * [Phoenix开发指南](/uhadoop/developer/phoenixdev)
     * [Zeppelin开发指南](/uhadoop/developer/zeppelindev)
+    * [US3接入](/uhadoop/developer/us3)
 * [数据迁移](/uhadoop/migration)
 * [端口配置](/uhadoop/port)
 * 性能数据
