@@ -35,3 +35,5 @@
 ### 节点告警模板
 
 进入集群管理-监控信息页面，点击左节点名称进入节点监控页面，然后点击右上角告警模板按钮进行告警模板绑定。
+
+![node_template_bind](../../images/guide/node_template_bind.png)

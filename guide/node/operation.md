@@ -45,6 +45,8 @@ Core/Task升级支持升级规格与修改磁盘大小两种操作，说明如�
 
 * 修改磁盘大小：修改操作节点磁盘大小，升级期间节点无需重启，仅新机型支持该操作，具体见前端操作限制。
 
+注意：扩容Core节点需要执行数据均衡操作，具体见[数据均衡](../instance/balance.md)
+
 ## 组件管理
 
 选择指定节点点击“组件管理”可查看节点上部署组件信息:
@@ -76,8 +78,17 @@ Master节点不支持，仅支持Core节点与Task节点删除。
 
 Core节点最小数量为3，当Core节点数量大于3时才可支持删除操作，其中Core1节点为特殊节点不允许删除。
 
-(TODO)
+* 节点下线：Core节点删除需要先下线节点，将该节点上数据同步到其他节点，可选择指定节点，点击“下线”按钮：
+
+![datanode_offlinie](../../images/guide/datanode_offlinie.png)
+
+ * 节点删除：下线操作之后，节点将处于“下线中”状态，当节点变为“不可用”状态时表示数据同步完成，可点击节点对应“删除”按钮删除节点。
+
+![datanode_delete](../../images/guide/datanode_delete.png)
+
 
 ### 删除Task节点
 
-(TODO)
+确认剩余计算资源充足的情况下，可选择对应Task节点 点击对应“删除”按钮删除该节点。
+
+![tasknode_offlinie](../../images/guide/tasknode_offlinie.png)

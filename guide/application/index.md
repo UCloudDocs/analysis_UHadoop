@@ -53,4 +53,3 @@ Yarn Application 状态说明：
 ![yarn_application_master_page](../../images/guide/yarn_application_master_page.png)
 
 说明：只有运行结束的任务才能查询到日志。
-yarn_application_master_page.png
