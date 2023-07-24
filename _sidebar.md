@@ -18,14 +18,8 @@
         * [重启服务](/uhadoop/guide/service/restart)
         * [开启服务](/uhadoop/guide/service/install)
         * [关闭服务](/uhadoop/guide/service/shutdown)
-    * Yarn Application跟踪
-        * [Yarn Application列表](/uhadoop/guide/application/list)
-        * [Application Master详情](/uhadoop/guide/application/detail)
-    * Yarn 队列管理
-        * [队列列表](/uhadoop/guide/queue/list)
-        * [创建队列](/uhadoop/guide/queue/create)
-        * [修改队列](/uhadoop/guide/queue/update)
-        * [删除队列](/uhadoop/guide/queue/delete)
+    * Yarn Application跟踪(/uhadoop/guide/application/index)
+    * Yarn 队列管理(/uhadoop/guide/queue/index)
     * 节点管理
         * [节点列表](/uhadoop/guide/node/list)
         * [添加节点](/uhadoop/guide/node/add)
@@ -36,10 +30,7 @@
         * [绑定防火墙](/uhadoop/guide/node/firewall)
         * [Core节点下线](/uhadoop/guide/node/core_delete)
         * [Task节点删除](/uhadoop/guide/node/task_delete)
-    * 监控告警
-        * [集群监控信息](/uhadoop/monitor/cluster)
-        * [节点告警信息](/uhadoop/monitor/node)
-        * [告警绑定](/uhadoop/monitor/alarm)
+    * 监控告警(/uhadoop/monitor/index)
     * 操作日志(/uhadoop/logs/operation)
 * 开发指南
     * [Hadoop开发指南](/uhadoop/developer/hadoopdev)
@@ -58,10 +49,7 @@
     * [Phoenix开发指南](/uhadoop/developer/phoenixdev)
     * [Zeppelin开发指南](/uhadoop/developer/zeppelindev)
     * [US3接入](/uhadoop/developer/us3)
-* [数据迁移](/uhadoop/migration)
 * [端口配置](/uhadoop/port)
-* 性能数据
-    * [UHadoop性能测试](/uhadoop/testdata/uhadoop)
 * FAQs
     * [故障排查](/uhadoop/user/troubleshooting)
     * [集群使用](/uhadoop/user/general)
