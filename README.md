@@ -31,8 +31,8 @@
         * [绑定防火墙](/uhadoop/guide/node/firewall)
         * [Core节点下线](/uhadoop/guide/node/core_delete)
         * [Task节点删除](/uhadoop/guide/node/task_delete)
-    * 监控告警(/uhadoop/guide/monitor/index)
-    * 操作日志(/uhadoop/guide/logs/operation)
+    * [监控告警](/uhadoop/guide/monitor/index)
+    * [操作日志](/uhadoop/guide/logs/operation)
 * 开发指南
     * [Hadoop开发指南](/uhadoop/developer/hadoopdev)
     * [Hive开发指南](/uhadoop/developer/hivedev)
