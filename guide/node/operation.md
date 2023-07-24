@@ -12,7 +12,7 @@ UHadoop提供多种节点操作，可根据不同场景选择操作。
 
 ![node_add_page](../../images/guide/node_add_page.png)
 
-注意：新增Core节点需要执行数据均衡操作，具体见[数据均衡](../instance/balance.md)
+注意：新增Core节点需要执行数据均衡操作，具体见[数据均衡](/uhadoop/guide/instance/balance.md)
 
 
 ## 节点升级
@@ -45,7 +45,7 @@ Core/Task升级支持升级规格与修改磁盘大小两种操作，说明如�
 
 * 修改磁盘大小：修改操作节点磁盘大小，升级期间节点无需重启，仅新机型支持该操作，具体见前端操作限制。
 
-注意：扩容Core节点需要执行数据均衡操作，具体见[数据均衡](../instance/balance.md)
+注意：扩容Core节点需要执行数据均衡操作，具体见[数据均衡](uhadoop/guide/instance/balance.md)
 
 ## 组件管理
 
@@ -66,7 +66,7 @@ Core/Task升级支持升级规格与修改磁盘大小两种操作，说明如�
 
 ## 防火墙绑定
 
-可对节点进行防火墙绑定，已设置节点访问策略，仅支持对Master节点进行该操作。
+可对节点进行防火墙绑定，以设置节点访问策略，仅支持对Master节点进行该操作。
 
 ![node_master_firewall](../../images/guide/node_master_firewall.png)
 
@@ -80,7 +80,7 @@ Core节点最小数量为3，当Core节点数量大于3时才可支持删除操�
 
 * 节点下线：Core节点删除需要先下线节点，将该节点上数据同步到其他节点，可选择指定节点，点击“下线”按钮：
 
-![datanode_offlinie](../../images/guide/datanode_offlinie.png)
+![datanode_offline](../../images/guide/datanode_offline.png)
 
  * 节点删除：下线操作之后，节点将处于“下线中”状态，当节点变为“不可用”状态时表示数据同步完成，可点击节点对应“删除”按钮删除节点。
 
