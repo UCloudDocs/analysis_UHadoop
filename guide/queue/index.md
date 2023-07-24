@@ -4,15 +4,15 @@
 
 ![queue_list](../../images/guide/queue_list.png)
 
-点击“队列配置”按钮可进行常见、修改、删除队列操作。
+点击“队列配置”按钮可进行创建、修改、删除队列操作。
 
-![queue_config.png](../../images/guide/queue_config.png.png)
+![queue_config.png](../../images/guide/queue_config.png)
 
 ## 创建队列：
 
 进入队列配置页面后，点击“创建队列”进入创建队列页面：
 
-![queue_create.png](../../images/guide/queue_create.png.png)
+![queue_create.png](../../images/guide/queue_create.png)
 
 队列名称要求只能输入字母或者数字，且首位只能输入字母，确定后会提供队列默认配置，在队列配置中可进行修改，信息确认之后点击确认按钮进行生效。
 

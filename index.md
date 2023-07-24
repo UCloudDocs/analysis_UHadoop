@@ -24,14 +24,7 @@
     * [Yarn 队列管理](/uhadoop/guide/queue/index)
     * 节点管理
         * [节点列表](/uhadoop/guide/node/list)
-        * [添加节点](/uhadoop/guide/node/add)
-        * [升级Master节点](/uhadoop/guide/node/upgrade)
-        * [组件管理](/uhadoop/guide/node/components)
-        * [关机与开机](/uhadoop/guide/node/reboot)
-        * [绑定与解绑EIP](/uhadoop/guide/node/eip)
-        * [绑定防火墙](/uhadoop/guide/node/firewall)
-        * [Core节点下线](/uhadoop/guide/node/core_delete)
-        * [Task节点删除](/uhadoop/guide/node/task_delete)
+        * [节点操作](/uhadoop/guide/node/operation)
     * [监控告警](/uhadoop/guide/monitor/index)
     * [操作日志](/uhadoop/guide/logs/operation)
 * 开发指南
