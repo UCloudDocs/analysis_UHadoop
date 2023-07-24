@@ -1,5 +1,6 @@
 # 托管 Hadoop 集群 UHadoop
 
+
 * 产品简介
     * [什么是UHadoop](/uhadoop/introduction/concept)
     * [产品架构](/uhadoop/introduction/architecture)
@@ -19,8 +20,8 @@
         * [重启服务](/uhadoop/guide/service/restart)
         * [开启服务](/uhadoop/guide/service/install)
         * [关闭服务](/uhadoop/guide/service/shutdown)
-    * Yarn Application跟踪(/uhadoop/guide/application/index)
-    * Yarn 队列管理(/uhadoop/guide/queue/index)
+    * [Yarn Application跟踪](/uhadoop/guide/application/index)
+    * [Yarn 队列管理](/uhadoop/guide/queue/index)
     * 节点管理
         * [节点列表](/uhadoop/guide/node/list)
         * [添加节点](/uhadoop/guide/node/add)
