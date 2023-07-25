@@ -10,6 +10,7 @@
         * [集群概览](/uhadoop/guide/instance/detail)
         * [数据均衡](/uhadoop/guide/instance/balance)
         * [集群访问](/uhadoop/guide/instance/client)
+        * [元数据管理](/uhadoop/guide/instance/metadb)
         * [集群删除](/uhadoop/guide/instance/delete)
     * [服务管理](/uhadoop/guide/service/index)
     * [Yarn Application跟踪](/uhadoop/guide/application/index)
