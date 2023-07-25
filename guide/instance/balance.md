@@ -4,7 +4,6 @@
 
 ![balance_buttion](../../images/guide/balance_buttion.png)
 
-选中数集群，在右侧的管理界面选中均衡数据按钮，进入数据均衡弹框如下：
 
 ![balance_params](../../images/guide/balance_params.png)
 
