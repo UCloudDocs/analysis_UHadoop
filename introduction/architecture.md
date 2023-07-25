@@ -4,7 +4,7 @@
 
 ## 1. HDFS
 
-HDFS默认采用HA方式部署，2个Namenode分别部署于master1与master2，Datanode则分配在所有Core节点上，Task不部署Datanode。
+HDFS默认采用HA方式部署，2个NameNode分别部署于master1与master2，DataNode则分配在所有Core节点上，Task不部署DataNode。
 
 ![](/images/developer/hdfs.jpg)
 
