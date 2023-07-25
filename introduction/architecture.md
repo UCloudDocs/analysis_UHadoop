@@ -10,7 +10,7 @@ HDFS默认采用HA方式部署，2个NameNode分别部署于master1与master2，
 
 ## 2. Yarn
 
-Yarn同样默认采用HA方式部署，2个ResourceManager分别部署于master1与master2，Nodemanager则分配在所有Core、Task节点上。
+Yarn同样默认采用HA方式部署，2个ResourceManager分别部署于master1与master2，NodeManager则分配在所有Core、Task节点上。
 
 ![](/images/developer/yarn.jpg)
 
