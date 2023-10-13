@@ -1,9 +1,8 @@
 
-# US3支持（公测中）
+# US3支持
 
 说明：
 
-- 当前仅支持乌兰察布可用区，需要使用用户可以联系服务经理开通相关特性使用；
 - 仅支持新建的uhadoop-2.2版本实例；
 
 ## 1. 使用场景
@@ -14,7 +13,7 @@
 
 ## 2. 接入步骤
 
-1. UHadoop资源创建：控制台创建hadoop-2.2版本 UHadoop实例（当前仅支持乌兰察布可用区）；
+1. UHadoop资源创建：控制台创建hadoop-2.2版本 UHadoop实例；
 
 2. US3资源创建：
     - 在US3控制台创建需要使用Bucket，如果已创建可跳过，具体参考：[US3-创建存储空间](https://docs.ucloud.cn/ufile/guide/space?id=%e5%88%9b%e5%bb%ba%e5%ad%98%e5%82%a8%e7%a9%ba%e9%97%b4)
