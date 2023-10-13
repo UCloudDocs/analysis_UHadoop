@@ -36,6 +36,8 @@
 
       ![us3_guide_update_config_reboot](../images/us3_guide_update_config_reboot.png)
 
+4. Hive适配：Hadoop服务重启完成之后，重启Hive服务即可。注意：不重启将访问us3将报错。
+
 ## 3. 使用示例
 
 ### 3.1 HDFS
