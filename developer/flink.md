@@ -2,7 +2,7 @@
 
 ## 1. 基本介绍
 
-**Apache Flink** 是一个在有界数据流和无界数据流上进行有状态计算分布式处理引擎和框架。Flink 设计旨在*所有常见的集群环境*中运行，以*任意规模*和*内存*级速度执行计算。详细见[Appache Flink](https://flink.apache.org/zh/)。
+**Apache Flink** 是一个在有界数据流和无界数据流上进行有状态计算分布式处理引擎和框架。Flink 设计旨在所有常见的集群环境中运行，以*任意规模和内存级速度执行计算。详细见[Appache Flink](https://flink.apache.org/zh/)。
 
 ## 2. 提交作业模式
 
