@@ -72,7 +72,7 @@ Flink On Yarn模式提供Session、Per-Job Cluster与Application三种模式提�
 
 ### 4.1 查看作业
 
-* 通过<master1节点>:23188访问Yarn WebUI，如下。选择对应任务，并点击任务ID，如截图中标红区域。
+* 访问Yarn WebUI，访问方式参考[UHadoop服务WebUI接入指南](/uhadoop/developer/webui) ，如下图选择对应任务，并点击任务ID，如截图中标红区域。
 
   ![flink_yarn_web_ui](../images/flink_yarn_web_ui.png)
 
@@ -86,7 +86,7 @@ Flink On Yarn模式提供Session、Per-Job Cluster与Application三种模式提�
 
 说明：已结束的作业需要通过单独的方式查看日志，具体如下：
 
-* 通过<master1节点>:23188访问Yarn WebUI，如下。选择对应任务，并点击任务ID，如截图中标红区域。
+* 访问Yarn WebUI，访问方式参考[UHadoop服务WebUI接入指南](/uhadoop/developer/webui) ，如下图选择对应任务，并点击任务ID，如截图中标红区域。
 
   ![flink_yarn_finished_job](../images/flink_yarn_finished_job.png)
   
