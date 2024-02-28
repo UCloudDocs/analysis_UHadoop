@@ -16,7 +16,7 @@
 说明：
 
 * 访问前需要确认实例是否部署对应组件；
-* 以上展示位集群默认端口，如果用户有修改端口信息需要按照实际端口访问；
+* 以上展示端口为集群默认端口，如果您有修改端口信息需要按照实际端口访问；
 
 ## 2. 服务WebUI访问方式
 
@@ -32,7 +32,7 @@
 
 * Windows云主机配置hosts：在主机c:\windows\system32\drivers\etc\hosts文件中追加集群节点信息，格式：“集群节点内网ip 主机名”。可从节点中任意节点/etc/hosts文件中拷贝：如下图标红区域，注意标红区域外的内容不要拷贝。
 
-  ![image-20240228115846128](/Users/user/Library/Application Support/typora-user-images/image-20240228115846128.png)
+  ![webui_access_hosts_copy](../images/webui_access_hosts_copy.png)
 
 
 
@@ -49,7 +49,7 @@
 
 * 集群节点绑定EIP与防火墙：可在集群管理->节点管理中对master节点绑定EIP与防火墙。
 
-  ![webui_access_hosts](../images/webui_access_hosts.png)
+  ![images/webui_access_bind_eip.png](../images/webui_access_hosts.png)
 
 该方式配置简单，适用于测试等场景，使用时一定注意集群外网安全。
 
