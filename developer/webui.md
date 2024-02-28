@@ -49,7 +49,7 @@
 
 * 集群节点绑定EIP与防火墙：可在集群管理->节点管理中对master节点绑定EIP与防火墙。
 
-  ![images/webui_access_bind_eip.png](../images/webui_access_hosts.png)
+  ![images/webui_access_bind_eip.png](../images/webui_access_bind_eip.png)
 
 该方式配置简单，适用于测试等场景，使用时一定注意集群外网安全。
 
