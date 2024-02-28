@@ -6,7 +6,7 @@
 | ------------------- | ---------------- | -------- |
 | HDFS WebUI          | master1, master2 | 50070    |
 | Yarn WebUI          | master1, master2 | 23188    |
-| Presto/Trino WebUI  | Master1          | 28080    |
+| Presto/Trino WebUI  | master1          | 28080    |
 | Hue                 | master1          | 8888     |
 | Tez WebUI           | master2          | 19999    |
 | Spark HistoryServer | master2          | 18080    |
