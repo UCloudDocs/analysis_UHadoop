@@ -29,6 +29,7 @@
     * [监控告警](/uhadoop/guide/monitor/index)
     * [操作日志](/uhadoop/guide/logs/operation)
 * 开发指南
+    * [服务WebUI接入指南](/uhadoop/developer/webui)
     * [Hadoop开发指南](/uhadoop/developer/hadoopdev)
     * [Hive开发指南](/uhadoop/developer/hivedev)
     * [Sentry使用指南](/uhadoop/developer/sentrydev)
