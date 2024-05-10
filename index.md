@@ -26,6 +26,7 @@
     * 节点管理
         * [节点列表](/uhadoop/guide/node/list)
         * [节点操作](/uhadoop/guide/node/operation)
+    * [客户端管理](/uhadoop/guide/client/index)
     * [监控告警](/uhadoop/guide/monitor/index)
     * [操作日志](/uhadoop/guide/logs/operation)
 * 开发指南
