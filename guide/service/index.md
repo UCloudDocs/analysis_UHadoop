@@ -24,7 +24,7 @@
 
 ### 参数配置
 
-点击“修改参数”可对服务参数进行修改
+点击“修改参数”可对服务参数进行修改，页面如下：
 
 ![config_updating](../../images/config_updating.png)
 
