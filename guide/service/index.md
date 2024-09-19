@@ -18,7 +18,7 @@
 
 ## 参数配置
 
-点击“参数配置”按钮可对服务参数进行管理，包括“参数配置”与“修改历史”两部分。
+点击服务列表指定服务“参数配置”按钮可对服务参数进行管理，包括“参数配置”与“修改历史”两部分。
 
 ![config_update](../../images/config_update.png)
 
@@ -43,17 +43,7 @@
 
 ![config_update_statement](../../images/config_update_statement.png)
 
-
-弹框中需要关注数据项如下：
-
 参数修改需要重启服务才可生效，根据需要可选择立即重启服务，或者稍后进行手动重启服务。
-
-
-![service_config_update](../../images/guide/service_config_update.png)
-
-
-
-![service_config_restart](../../images/guide/service_config_restart.png)
 
 ### 修改历史
 
